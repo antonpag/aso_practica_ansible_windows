@@ -1,0 +1,9 @@
+---
+- name: eliminar usuario
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: remove User
+      win_user:
+        name: nuevousuario1
+        state: absent

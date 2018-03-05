@@ -1,0 +1,10 @@
+---
+- name: Añadir usuario
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Add User
+      win_user:
+        name: nuevousuario1
+        password: Usuario2018
+        state: present
